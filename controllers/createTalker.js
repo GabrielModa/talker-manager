@@ -7,8 +7,7 @@ try {
   const talkers = await readFile('./talker.json', 'utf-8');
   const parsedTalkers = JSON.parse(talkers);
   
-  const newTalker = { name, age, id: parsedTalkers.length + 1, talk };
-  
+  const newTalker = { name, age, id: parsedTalkers.length + 1, talk };  
   parsedTalkers.push(newTalker);
   
   const stringfieldTalker = JSON.stringify(parsedTalkers, null, 2);
