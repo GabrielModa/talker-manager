@@ -19,6 +19,8 @@ const validateTalker = [
   middleware.validateName,
   middleware.validateAge,
   middleware.validateTalk,
+  middleware.validateWatchedAt,
+  middleware.validateRate,
 ];
 
 // não remova esse endpoint, e para o avaliador funcionar
