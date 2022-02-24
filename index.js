@@ -30,6 +30,7 @@ app.post('/login',
  controllers.createLogin);
 
  app.post('/talker',
+ middleware.validateToken,
  controllers.createTalker);
 
 app.use(middleware.errorHandler);

@@ -3,11 +3,11 @@ const { readFile, writeFile } = require('fs/promises');
 module.exports = async (req, res, next) => {
 try {
   const { name, age, talk } = req.body;
-
+  
   const talkers = await readFile('./talker.json', 'utf-8');
   const parsedTalkers = JSON.parse(talkers);
   
-  const newTalker = { name, age, id: 5, talk };
+  const newTalker = { name, age, id: parsedTalkers.length + 1, talk };
   
   parsedTalkers.push(newTalker);
   
