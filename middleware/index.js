@@ -4,6 +4,8 @@ const validatePassword = require('./validatePassword');
 const validateToken = require('./validateToken');
 const validateName = require('./validateName');
 const validateAge = require('./validateAge');
+const validateTalk = require('./validateTalk');
+
 
 module.exports = {
   errorHandler,
@@ -12,4 +14,5 @@ module.exports = {
   validateToken,
   validateName,
   validateAge,
+  validateTalk,
 };
