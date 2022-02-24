@@ -16,6 +16,7 @@ const validateLogin = [
 
 const validateTalker = [
   middleware.validateToken,
+  middleware.validateName,
 ];
 
 // não remova esse endpoint, e para o avaliador funcionar
