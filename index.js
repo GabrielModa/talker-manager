@@ -28,19 +28,23 @@ app.get('/', (_request, response) => {
   response.status(HTTP_OK_STATUS).send();
 });
 
-app.get('/talker',
- controllers.listTalkers);
-
-app.get('/talker/:id', 
-controllers.getTalkerById);
-
 app.post('/login',
  validateLogin,
  controllers.createLogin);
 
+app.get('/talker',
+ controllers.listTalkers);
+ 
  app.post('/talker',
   validateTalker,
  controllers.createTalker);
+
+app.get('/talker/:id', 
+controllers.getTalkerById);
+
+app.put('/talker/:id',
+validateTalker,
+controllers.editTalker);
 
 app.use(middleware.errorHandler);
 
