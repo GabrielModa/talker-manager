@@ -8,7 +8,8 @@ module.exports = async (req, res, next) => {
     'utf-8');
     const parsedTalkers = JSON.parse(talkers);
 
-    const searchByName = parsedTalkers.filter((t) => t.name.toLoweCase() === name.toLowerCase());
+    const searchByName = parsedTalkers
+    .filter((t) => t.name.toLowerCase().includes() === name.toLowerCase().includes());
     return res.status(200).json(searchByName);
   } catch (e) {
     next(e);
