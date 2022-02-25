@@ -46,6 +46,10 @@ app.put('/talker/:id',
 validateTalker,
 controllers.editTalker);
 
+app.delete('/talker/:id',
+middleware.validateToken,
+controllers.deleteTalker);
+
 app.use(middleware.errorHandler);
 
 app.listen(PORT, () => {
