@@ -24,7 +24,7 @@ Você vai desenvolver uma API de um CRUD (**C**reate, **R**ead, **U**pdate e **D
 
 1. Clone o repositório
 
-- `git clone git@github.com:tryber/sd-015-a-project-talker-manager.git`.
+- `git clone https://github.com/GabrielModa/talker-manager.git`.
 - Entre na pasta do repositório que você acabou de clonar:
   - `cd sd-015-a-project-talker-manager`
 
